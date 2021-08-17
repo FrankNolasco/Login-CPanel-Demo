@@ -24,7 +24,7 @@ var form = document.getElementById("login-validation")
 
 function onSubmit (e) {
   e.preventDefault();
-  window.history.pushState({login: true},"cpanel","/pages/cpanel.html");
+  window.history.pushState({login: true},"cpanel","/Login-CPanel-Demo/pages/cpanel.html");
   window.history.go(0);
 }
 
