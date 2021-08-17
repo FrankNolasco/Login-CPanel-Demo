@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand bg-light p-2 rounded" href="#">
+          <img
+            src="../assets/Escudo_Universidad_Nacional_de_Piura.png"
+            alt="UNP"
+            width="40px"
+            height="40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/register.html">Registrar</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    <main
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px);
+      "
+    >
+      <div class="card col-md-4 p-3 bg-dark d-flex">
+        <form class="row g-3 needs-validation" novalidate id="login-validation">
+          <div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label"
+              >Usuario</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor ingrese su nombre de usuario.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationPassword" class="form-label"
+              >Contraseña</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-key"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"
+                  />
+                  <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                </svg>
+              </span>
+              <input
+                type="password"
+                class="form-control"
+                id="validationPassword"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor ingrese su contraseña.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary col-12" type="submit">
+              Submit form
+            </button>
+          </div>
+        </form>
+      </div>
+      <div></div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../functions/form.js"></script>
+  </body>
+</html>
